@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Posts from "./components/Posts";
 import Pagination from "./components/Pagination";
+import Memo from "./components/Memo";
+import Recoil from "./components/Recoil";
+import Zustand from "./components/Zustand";
 
 const customeAlphabetSortAsc=(a,b)=>{
 
@@ -81,7 +84,9 @@ export default function App() {
 
   return (
     <div className="container mt-5">
-            <h3>Page No - {currentPage}</h3>
+      {
+        /**
+         *  <h3>Page No - {currentPage}</h3>
      
       <h2 style={{textAlign:"center"}}>My Blog Posts</h2>
       {
@@ -105,6 +110,16 @@ export default function App() {
 
       <Pagination postPerPage={postsPerPage}  nextPage={nextPage} previousPage={previousPage} totalPosts={posts.length} paginate={PaginateFunction}/>
       </div>
+      <Memo/>
+      <Recoil/>
+         */
+        
+      }
+           
+
+           <Zustand/>
+
+
 
   
     </div>
